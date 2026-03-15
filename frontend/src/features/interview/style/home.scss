@@ -1,0 +1,261 @@
+$bg-page:        #0d1117;
+$bg-card:        #161b22;
+$bg-panel:       #1c2230;
+$bg-input:       #1e2535;
+$border-color:   #2a3348;
+$text-primary:   #e6edf3;
+$text-muted:     #7d8590;
+$accent:         #ff2d78;
+$accent-alt:     #ff6b9d;
+$badge-required: #ff2d78;
+$badge-best:     #ff2d78;
+$info-bg:        #1b2a4a;
+$info-border:    #2d4a7a;
+$font-stack:     system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+
+
+.home{
+    width:100%;
+    min-height:100vh;
+    background-color: #10101a;
+    color: #e1e3e8;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:1rem;
+
+    .hero{
+        text-align:center;
+        margin-bottom:2rem;
+
+        h1{
+            font-size:1.5rem;
+            margin:0;
+            color:#fff;
+        }
+        .subtitle{
+            margin-top:0.5rem;
+            font-size:0.9rem;
+            color:#bbb;
+        }
+    }
+
+    .interview-input-group{
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
+        gap:1rem;
+        width:100%;
+        max-width:1200px;
+    }
+
+    .input-card{
+        background:#181824;
+        border-radius:0.75rem;
+        padding:1rem;
+        flex:1;
+        display:flex;
+        flex-direction:column;
+        gap:0.5rem;
+        box-shadow:0 4px 12px rgba(0,0,0,0.3);
+        min-height:450px;
+    }
+
+    .card-header{
+        display:flex;
+        align-items:center;
+        gap:0.5rem;
+    }
+    .card-header h2{
+        font-size:1.1rem;
+        font-weight:600;
+        margin:0;
+    }
+    .card-header .icon{
+        width:1.5rem;
+        height:1.5rem;
+        background-size:contain;
+        background-repeat:no-repeat;
+        display:inline-block;
+    }
+    .job-icon{
+        background-image:url('/icons/briefcase.svg');
+    }
+    .profile-icon{
+        background-image:url('/icons/user.svg');
+    }
+    .required{
+        background:#ff0066;
+        color:#fff;
+        font-size:0.7rem;
+        padding:0.1rem 0.4rem;
+        border-radius:0.25rem;
+        margin-left:0.5rem;
+    }
+    .info-footer{
+        margin-top:2rem;
+        color:#888;
+        font-size:0.85rem;
+        text-align:center;
+    }
+
+    .left-card{
+        flex:1;
+        display:flex;
+        flex-direction:column;
+        gap:0.75rem;
+    }
+
+    label{
+        font-weight:600;
+        margin-bottom:0.25rem;
+    }
+
+    textarea{
+        width:100%;
+        min-height:100px;
+        border:none;
+        outline:none;
+        padding:0.5rem;
+        border-radius:0.5rem;
+        background-color: rgb(41, 46, 59);
+        color: whitesmoke;
+        font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        resize:none;
+    }
+    .job-description-input{
+        min-height:350px;
+    }
+
+    .char-count{
+        text-align:right;
+        font-size:0.8rem;
+        color:#888;
+    }
+
+    .right-card{
+        flex:1;
+        display:flex;
+        flex-direction:column;
+        gap:0.5rem;
+    }
+
+    .upload-box{
+        background:#1a1a2e;
+        border:2px dashed #444;
+        border-radius:0.5rem;
+        padding:1rem;
+        text-align:center;
+    }
+    .upload-label{
+        font-weight:600;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:0.5rem;
+    }
+    .tag{
+        background:#ff0066;
+        color:#fff;
+        padding:0.1rem 0.4rem;
+        font-size:0.7rem;
+        border-radius:0.25rem;
+    }
+    .drop-area{
+        margin-top:0.5rem;
+        padding:1.5rem;
+        background:#0f0f1f;
+        border-radius:0.5rem;
+        cursor:pointer;
+    }
+
+    .divider{
+        text-align:center;
+        font-weight:600;
+        color:#888;
+    }
+
+    .notice{
+        font-size:0.9rem;
+        color:#bbb;
+        margin-top:0.5rem;
+    }
+
+    .button.primary-button{
+        margin-top:1rem;
+        padding:1rem 2rem;
+        background:#ff0066;
+        color:#fff;
+        border:none;
+        border-radius:0.5rem;
+        cursor:pointer;
+        font-size:1rem;
+        font-weight:600;
+    }
+
+
+   .recent-reports{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 900px;
+
+    .reports-list{
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+
+        .report-item{
+            background-color: $bg-card;
+            border: 1px solid $border-color;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            cursor: pointer;
+            flex-shrink: 0;
+
+            .match-score {
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: $accent;
+                align-items: flex-start;
+            }
+        }
+    }
+}
+    @media (max-width: 768px) {
+        padding:0.5rem;
+        .hero {
+            margin-bottom:0.5rem;
+            h1 {
+                font-size:1.2rem;
+            }
+            .subtitle {
+                font-size:0.8rem;
+            }
+        }
+        .interview-input-group {
+            flex-direction:column;
+            gap:1rem;
+        }
+        .left-card, .right-card {
+            flex:none;
+            width:100%;
+        }
+        textarea {
+            min-height:150px;
+        }
+        .drop-area {
+            padding:1rem;
+        }
+        .button.primary-button {
+            padding:0.75rem 1.5rem;
+            font-size:0.9rem;
+        }
+    }
+}
